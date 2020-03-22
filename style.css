@@ -94,7 +94,7 @@ a {
 .container {
   width: 310px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 5px;
 }
 
 /* TODO: Visually-hidden */
@@ -518,17 +518,17 @@ body:not(.home) .page-header {
 
 /* TODO: Promo washing */
 .promo-washing__content {
-  margin-right: -30px;
-  margin-left: -30px;
+  margin-right: -5px;
+  margin-left: -5px;
   padding-top: 125px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
   background-color: #F9F7F4;
 }
 .promo-washing__picture-wrapper {
   margin-top: 40px;
-  margin-right: -30px;
-  margin-left: -30px;
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 /* TODO: Promo bath */
@@ -588,10 +588,10 @@ body:not(.home) .page-header {
   fill: #A6856A;
 }
 .our-products__slider .slick-prev {
-  left: -20px;
+  left: 10px;
 }
 .our-products__slider .slick-next {
-  right: -20px;
+  right: 10px;
 }
 .our-products__link-all {
   display: block;
@@ -1109,8 +1109,8 @@ body:not(.home) .page-header {
 
 /* TODO: Product delivery */
 .product-delivery {
-  margin-right: -30px;
-  margin-left: -30px;
+  margin-right: -5px;
+  margin-left: -5px;
   padding: 19px 30px 28px 30px;
   background-color: #EFECEA;
 }
@@ -1615,6 +1615,37 @@ td.cart-list__item-detail {
 /* TODO: Breadcrumbs */
 .breadcrumbs {
   display: none;
+}
+
+/* TODO: Media mobile */
+@media (min-width: 370px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .product-delivery {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .promo-washing__content {
+    margin-right: -30px;
+    margin-left: -30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .promo-washing__picture-wrapper {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .our-products__slider .slick-prev {
+    left: -20px;
+  }
+  .our-products__slider .slick-next {
+    right: -20px;
+  }
 }
 
 /* TODO: Media tablet */
