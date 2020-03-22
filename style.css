@@ -178,6 +178,7 @@ a {
   font-family: "Lora", "Times New Roman",serif;
   line-height: 1.4;
   font-style: italic;
+  font-weight: 400;
 }
 .section-caption::before,
 .section-caption::after {
