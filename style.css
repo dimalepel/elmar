@@ -2568,10 +2568,8 @@ td.cart-list__item-detail {
     margin-top: 46px;
     margin-bottom: 71px;
   }
-  .page-main__content--about {
-    max-width: 780px;
-  }
   .page-main__content--about p {
+    max-width: 780px;
     font-size: 16px;
     line-height: 26px;
   }
