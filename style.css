@@ -523,10 +523,10 @@ body:not(.home) .page-header {
   padding-top: 125px;
   padding-right: 5px;
   padding-left: 5px;
+  padding-bottom: 40px;
   background-color: #F9F7F4;
 }
 .promo-washing__picture-wrapper {
-  margin-top: 40px;
   margin-right: -5px;
   margin-left: -5px;
 }
