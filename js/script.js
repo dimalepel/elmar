@@ -84,24 +84,35 @@
     ]
   });
 
-  /* Скрипт: Яндекс карта */
-  ymaps.ready(init);
-
-  function init() {
-    var center = [53.86717640611073,27.50892967790977];
-    var elamarMap = new ymaps.Map('map', {
-      center: center,
-      zoom: 17,
-      controls: []
+  /* Скрипт: закрываем модальное окно */
+  var modal = $('.js--modal');
+  var modalClose = $('.js--modal-close');
+  if(modalClose) {
+    $(modalClose).click(function(event){
+      event.preventDefault();
+      $(modal).removeClass('open');
     });
-    var elamarPlacemark = new ymaps.Placemark(center, {}, {
-      iconLayout: 'default#image',
-      iconImageHref: 'img/ico-marker.png',
-      iconImageSize: [122, 128],
-      iconImageOffset: [-61, -128]
-    });
-    elamarMap.geoObjects.add(elamarPlacemark);
   }
 
+  /* Скрипт: Яндекс карта */
+  var map = $('#map');
+  if(map) {
+    ymaps.ready(init);
+    function init() {
+      var center = [53.86717640611073,27.50892967790977];
+      var elamarMap = new ymaps.Map('map', {
+        center: center,
+        zoom: 17,
+        controls: []
+      });
+      var elamarPlacemark = new ymaps.Placemark(center, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/ico-marker.png',
+        iconImageSize: [122, 128],
+        iconImageOffset: [-61, -128]
+      });
+      elamarMap.geoObjects.add(elamarPlacemark);
+    }
+  }
 })();
 
